@@ -1,0 +1,261 @@
+body { /*Afetará tudo que estiver dentro da tag body no HTML*/
+    font-family: 'Montserrat', sans-serif; /*Define a fonte utilizada*/
+}
+
+header {  /*Afetará tudo que estiver dentro da tag header no HTML*/
+    background: #bbbbbb; /*Define os valores de fundo*/
+    padding: 20px 0; /*Define a distância entre o conteúdo de um elemento e suas bordas*/
+} 
+
+.caixa {  /*Afetará tudo que estiver dentro dessa classe*/
+    position: relative; /*Determina o posicionamento dos elementos na página em relação a si mesmos*/
+    width: 940px;  /*Determina a largura da área de conteúdo de um elemento*/
+    margin: 0 auto;  /*Determina a área de margem dos 4 lados do elemento*/
+}
+
+nav {
+    position: absolute; /*Determina o posicionamento dos elementos de acordo com o elemento pai que eles estão associados*/
+    top: 110px;  /*Determina o quanto a borda da margem superior de uma caixa é deslocada abaixo da borda superior*/
+    right: 0;  /*Determina o quanto o texto será alinhado para direita*/
+}
+
+nav li {
+    display: inline;  /*Determina o tipo de caixa que será gerada por um elemento*/
+    margin: 0 0 0 15px; 
+}
+
+nav a {
+    text-transform: uppercase; /*Define um efeito no texto, no casso do uppercase = maiúsculo*/
+    color: #000000; /*Define a cor do texto de um determinado elemento*/
+    font-weight: bold; /*Define o peso/intensidade da fonte, nesse caso bold = negrito */
+    font-size: 22px;  /*Determina o tamanho da letra da fonte do texto*/
+    text-decoration: none; /*Determina o estilo das linhas especificadas, "sublinha o texto*/
+}
+
+nav a:hover { /*Pseudo-Classe que é ativada quando o usuário passa o cursor sobre o elemento */
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block; /*Definimos os elementos lado a lado e definimos as prorpiedades de largura e altura, e o navegador não ira ignorar elas*/
+    text-align: center; /*Alinha o texto no centro da página*/
+    width: 30%;
+    vertical-align: top; /*Centraliza verticalmente um elemento em seu elemento "pai"*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;  /*Altera a propriedade padrão da box model*/
+    border: 2px solid #000000; /*Adiciona um contorno ao redor do conteudo do elemento*/
+    border-radius: 10px; /*Define como bordas arredondadas serão*/
+}
+
+.produtos li:hover {
+    border-color: #C78C19; /*Define a cor utilizada na borda*/
+}
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg); 
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+form {
+    margin: 20px 0;
+} 
+
+form label, form legend {
+    display: block; /*Gera uma caixa de elemento de bloco*/
+    font-size: 20px;
+    margin:  0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*Realiza um efeito de transição*/
+    cursor: pointer; /*Especifica o cursor do mouse quando ele está sobre um elemento*/
+
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2); /*Distorce os elementos alterando os ângulos, tamanho, etc..*/
+    
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px ;
+}
+/* css pg inicial */
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; /*Especifica se um elemento pode ter elementos flutuantes do seu lado*/
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style:italic ; /*Altera o estilo da fonte*/
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /*Define que um elemento pode ser "empurrado* para que outros elementos possam se organizar em torno dele*/
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888); /*Funcionalidade para criar degrades*/
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5; /*Define o espaçamento entre as linhas do texto*/
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+
+.itens::before {
+    content: "★"; /*Gera o conteúdo de um elemento*/
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1; /*Determina a opacidade*/
+    transition: 400ms;
+    box-shadow:  10px 10px 10px 0 #000000; /*Adiciona efeitos de sombra em volta de um elemento*/
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+   .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+    width: auto;
+   }
+
+   h1 {
+        text-align: center;
+   }
+
+   nav {
+    position: static;
+   }
+
+   .lista-beneficios, .imagem-beneficios {
+    width: 100%;
+   }
+}

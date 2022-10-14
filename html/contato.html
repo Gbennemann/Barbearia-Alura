@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="/css/reset.css">
+		<link rel="stylesheet" href="/css/contato.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="/src/logo.png" alt="Logo da Barbearia Alura"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="/html/index.html">Home</a></li>
+						<li><a href="/html/produtos.html">Produtos</a></li>
+						<li><a href="/html/contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+        <main>
+            <form> <!--Elemento que define um formulário -->
+                <label for="nomesobrenome">Nome e sobrenome</label> <!--Elemento que representa uma legenda -->
+                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--Elemento utilizado para criar um controle interativo na seção do formulário -->
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="Seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!--Define um controle de edição da caixa de texto, número de linhas, colunas, etc... --> 
+
+                <fieldset> <!--Utilizado para agrupar elementos, uma alternativa para não utilizar label -->
+                    <legend>Como prefere o  nosso contato ?</legend> <!--Representa um "rótulo" para o conteúdo do <fieldset> -->
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+                    
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido ?</legend>
+                    <select> <!--Apresenta um menu de opções em que o usuário pode selecionar uma ou várias -->
+                        <option>Manhã</option> <!--Representa uma opção dentro do menu de opções -->
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidade por email ?</label> <!--Apresenta um checkbox para o usuário marcar ou desmarcar -->
+
+                <input type="submit" value="Enviar formulário" class="btn-enviar"> 
+
+            </form>
+            
+            <table>
+                <thead> <!--Indica o cabeçalho  de uma tabela, usamos apara destacar os títulos das colunas da tabela -->
+                    <tr> <!--Usamos para definir uma linha na tabela -->
+                        <th>Dia</th> <!--Define uma parte do cabeçalho da tabela -->
+                        <th>Horário</th>
+                    </tr>
+                </thead>  
+                <tbody> <!--Espaço onde serão colocadas as linhas e dados de uma tabela -->
+                    <tr>
+                        <td>Segunda</td> <!--Usamos para definir uma coluna na tabela -->
+                        <td>8h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h às 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h às 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+			<img src="/src/logo-branco.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+		</footer>
+	</body>
+</html>
